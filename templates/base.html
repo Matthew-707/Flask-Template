@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+
+        {% block title %} {% endblock %}
+
+    </title>
+    <link rel="sylesheet" href="{{ url_for ('static', filename='css') }}">
+    <script src="ajax.googlepis.com/ajax/libe/jquery/1.9.1/jquery.min.js"><</script>
+    <link rel="shortcut icon" href="{{ url_for ('static', filename='favicon.ico') }}">
+
+</head>
+<body>
+<nav>
+    <hl> Page navigation</hl>
+    <ul>
+        <li> <a href="/register">Register</a></li>
+        <li> <a href="Login">Login</a></li>
+    </ul>
+</nav>
+<section class="content">
+    <header>
+        {% block header %} {% endblock %}
+    <header>
+
+</section>
+
+
+<script type="text/javascript src="{{ url_for ('static', filename= scripts/main.js) }}"><</script>
+
+
+</body>
+</html>
